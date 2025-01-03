@@ -131,6 +131,24 @@ afterEvaluate {
                 groupId = 'com.github.SamNeill'
                 artifactId = 'Candyama'
                 version = rootProject.ext.VersionName
+
+                pom {
+                    name = 'Candyama'
+                    description = 'Android Icon Pack Dashboard Library'
+                    url = 'https://github.com/SamNeill/Candyama'
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'samneill'
+                            name = 'Sam Neill'
+                        }
+                    }
+                }
             }
         }
     }
