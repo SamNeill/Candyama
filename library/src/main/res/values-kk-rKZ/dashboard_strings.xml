@@ -79,6 +79,7 @@
     <!--Бөлісу-->
     <string name="share_app_title">Йо! %s қараңыз</string>
     <string name="share_app_body">Play Store дүкенінде %1$s белгіше бумасын қараңыз: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store дүкенінде %1$s белгіше бумасын қараңыз: %2$s</string>
 
     <!--Кіріспе түймесін түртіңіз-->
     <string name="tap_intro_home_navigation">Навигация тартпасы</string>

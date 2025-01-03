@@ -79,6 +79,7 @@
     <!--يشارك-->
     <string name="share_app_title">يو! تحقق من %s</string>
     <string name="share_app_body">اطلع على %1$s Icon Pack على متجر Play: %2$s</string>
+    <string name="share_app_body_amazon">اطلع على %1$s Icon Pack على متجر تطبيقات أمازون: %2$s</string>
 
     <!--اضغط على مقدمة-->
     <string name="tap_intro_home_navigation">درج التنقل</string>

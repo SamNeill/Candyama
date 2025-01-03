@@ -79,6 +79,7 @@
     <!--공유하다-->
     <string name="share_app_title">에야디야! %s을(를) 확인해 보세요</string>
     <string name="share_app_body">Play 스토어에서 %1$s 아이콘 팩을 확인하세요: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store 에서 %1$s 아이콘 팩을 확인하세요: %2$s</string>
 
     <!--소개를 탭하세요-->
     <string name="tap_intro_home_navigation">탐색 창</string>

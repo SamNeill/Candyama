@@ -79,6 +79,7 @@
     <!--Dela-->
     <string name="share_app_title">Yo! Kolla in %s</string>
     <string name="share_app_body">Kolla in %1$s Icon Pack på Play Butik: %2$s</string>
+    <string name="share_app_body_amazon">Kolla in %1$s Icon Pack på Amazon App Store: %2$s</string>
 
     <!--Tryck på Intro-->
     <string name="tap_intro_home_navigation">Navigationslåda</string>

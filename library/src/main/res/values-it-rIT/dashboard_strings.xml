@@ -79,6 +79,7 @@
     <!--Condividere-->
     <string name="share_app_title">Ehi! Controlla %s</string>
     <string name="share_app_body">Dai un\'occhiata al pacchetto di icone %1$s sul Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Dai un\'occhiata al pacchetto di icone %1$s sul Amazon App Store: %2$s</string>
 
     <!--Tocca Introduzione-->
     <string name="tap_intro_home_navigation">Cassetto di navigazione</string>

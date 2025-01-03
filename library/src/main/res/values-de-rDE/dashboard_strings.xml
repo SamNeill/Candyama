@@ -79,6 +79,7 @@
     <!--Aktie-->
     <string name="share_app_title">Yo! Schauen Sie sich %s an</string>
     <string name="share_app_body">Schauen Sie sich das %1$s Icon Pack im Play Store an: %2$s</string>
+    <string name="share_app_body_amazon">Schauen Sie sich das %1$s Icon Pack im Amazon App Store an: %2$s</string>
 
     <!--Tippen Sie auf Einführung-->
     <string name="tap_intro_home_navigation">Navigationsschublade</string>

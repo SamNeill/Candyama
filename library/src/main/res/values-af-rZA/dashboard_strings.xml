@@ -79,6 +79,7 @@
     <!--Deel-->
     <string name="share_app_title">Yo! Kyk na %s</string>
     <string name="share_app_body">Kyk na %1$s Icon Pack op Play Winkel: %2$s</string>
+    <string name="share_app_body_amazon">Kyk na %1$s Icon Pack op Amazon App Store: %2$s</string>
 
     <!--Tik Intro-->
     <string name="tap_intro_home_navigation">Navigasielaai</string>

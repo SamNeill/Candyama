@@ -79,6 +79,7 @@
     <!--Distribuie-->
     <string name="share_app_title">Yo! Verificați %s</string>
     <string name="share_app_body">Consultați pachetul de pictograme %1$s în Magazinul Play: %2$s</string>
+    <string name="share_app_body_amazon">Consultați pachetul de pictograme %1$s în Magazinul Amazon App Store: %2$s</string>
 
     <!--Atingeți Introducere-->
     <string name="tap_intro_home_navigation">Sertarul de navigare</string>

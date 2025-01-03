@@ -79,6 +79,7 @@
     <!--Делиться-->
     <string name="share_app_title">Йо! Посмотреть %s</string>
     <string name="share_app_body">Ознакомьтесь с пакетом значков %1$s в магазине Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Ознакомьтесь с пакетом значков %1$s в магазине Amazon App Store: %2$s</string>
 
     <!--Нажмите «Введение»-->
     <string name="tap_intro_home_navigation">Навигационный ящик</string>

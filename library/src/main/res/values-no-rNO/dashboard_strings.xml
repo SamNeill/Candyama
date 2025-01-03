@@ -79,6 +79,7 @@
     <!--Dele-->
     <string name="share_app_title">Yo! Sjekk ut %s</string>
     <string name="share_app_body">Sjekk ut %1$s Icon Pack på Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Sjekk ut %1$s Icon Pack på Amazon App Store: %2$s</string>
 
     <!--Trykk på Intro-->
     <string name="tap_intro_home_navigation">Navigasjonsskuff</string>

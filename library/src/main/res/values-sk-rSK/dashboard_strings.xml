@@ -79,6 +79,7 @@
     <!--zdieľať-->
     <string name="share_app_title">Ahoj! Pozrite si %s</string>
     <string name="share_app_body">Pozrite si balík ikon %1$s v Obchode Play: %2$s</string>
+    <string name="share_app_body_amazon">Pozrite si balík ikon %1$s v Obchode Amazon: %2$s</string>
 
     <!--Klepnite na položku Úvod-->
     <string name="tap_intro_home_navigation">Navigačná zásuvka</string>

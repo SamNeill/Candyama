@@ -79,6 +79,7 @@
     <!--分享-->
     <string name="share_app_title">哟！查看 %s</string>
     <string name="share_app_body">在 Play 商店中查看 %1$s 图标包：%2$s</string>
+    <string name="share_app_body_amazon">在亚马逊应用商店中查看 %1$s 图标包：%2$s</string>
 
     <!--点击介绍-->
     <string name="tap_intro_home_navigation">抽屉式导航</string>

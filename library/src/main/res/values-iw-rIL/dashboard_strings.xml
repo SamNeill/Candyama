@@ -79,6 +79,7 @@
     <!--לַחֲלוֹק-->
     <string name="share_app_title">יו! בדוק את %s</string>
     <string name="share_app_body">בדוק את חבילת הסמלים של %1$s בחנות Play: %2$s</string>
+    <string name="share_app_body_amazon">בדוק את חבילת הסמלים של %1$s בחנות האפליקציות של אמזון: %2$s</string>
 
     <!--הקש על מבוא-->
     <string name="tap_intro_home_navigation">מגירת ניווט</string>

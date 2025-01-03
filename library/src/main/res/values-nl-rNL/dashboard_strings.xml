@@ -79,6 +79,7 @@
     <!--Deel-->
     <string name="share_app_title">Jo! Bekijk %s</string>
     <string name="share_app_body">Bekijk %1$s Icon Pack in de Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Bekijk %1$s Icon Pack in de Amazon App Store: %2$s</string>
 
     <!--Tik op Intro-->
     <string name="tap_intro_home_navigation">Navigatie lade</string>

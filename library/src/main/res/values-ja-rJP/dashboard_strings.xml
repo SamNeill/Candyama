@@ -79,6 +79,7 @@
     <!--共有-->
     <string name="share_app_title">よーい！ %s をチェックアウト</string>
     <string name="share_app_body">Play ストアで %1$s アイコン パックをチェックしてください: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store で %1$s アイコン パックをチェックしてください: %2$s</string>
 
     <!--イントロをタップ-->
     <string name="tap_intro_home_navigation">ナビゲーションドロワー</string>

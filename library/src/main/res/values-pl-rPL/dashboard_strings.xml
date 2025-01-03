@@ -79,6 +79,7 @@
     <!--Udział-->
     <string name="share_app_title">Ej! Sprawdź %s</string>
     <string name="share_app_body">Sprawdź pakiet ikon %1$s w Sklepie Play: %2$s</string>
+    <string name="share_app_body_amazon">Sprawdź pakiet ikon %1$s w Sklepie Amazon: %2$s</string>
 
     <!--Kliknij Wprowadzenie-->
     <string name="tap_intro_home_navigation">Szuflada nawigacyjna</string>

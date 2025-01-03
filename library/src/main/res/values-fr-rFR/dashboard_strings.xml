@@ -79,6 +79,7 @@
     <!--Partager-->
     <string name="share_app_title">Yo! Découvrez %s</string>
     <string name="share_app_body">Découvrez le pack d\'icônes %1$s sur Play Store : %2$s</string>
+    <string name="share_app_body_amazon">Découvrez le pack d\'icônes %1$s sur Amazon App Store : %2$s</string>
 
     <!--Appuyez sur Introduction-->
     <string name="tap_intro_home_navigation">Tiroir de navigation</string>

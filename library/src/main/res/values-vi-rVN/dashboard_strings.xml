@@ -79,6 +79,7 @@
     <!--Chia sẻ-->
     <string name="share_app_title">Này! Kiểm tra %s</string>
     <string name="share_app_body">Xem Gói biểu tượng %1$s trên Cửa hàng Play: %2$s</string>
+    <string name="share_app_body_amazon">Xem Gói biểu tượng %1$s trên Cửa hàng Amazon: %2$s</string>
 
     <!--Nhấn vào phần giới thiệu-->
     <string name="tap_intro_home_navigation">Ngăn điều hướng</string>

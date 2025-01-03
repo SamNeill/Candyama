@@ -79,6 +79,7 @@
     <!--شیئر کریں۔-->
     <string name="share_app_title">یو! %s کو چیک کریں۔</string>
     <string name="share_app_body">Play Store پر %1$s آئیکن پیک چیک کریں: %2$s</string>
+    <string name="share_app_body_amazon">ایمیزون ایپ اسٹور پر %1$s آئیکن پیک چیک کریں: %2$s</string>
 
     <!--انٹرو پر ٹیپ کریں۔-->
     <string name="tap_intro_home_navigation">نیویگیشن دراز</string>

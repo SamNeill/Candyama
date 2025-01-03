@@ -79,6 +79,7 @@
     <!--Поділіться-->
     <string name="share_app_title">Йо! Перевірте %s</string>
     <string name="share_app_body">Перегляньте пакет значків %1$s у Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Перегляньте пакет значків %1$s у Amazon App Store: %2$s</string>
 
     <!--Натисніть Intro-->
     <string name="tap_intro_home_navigation">Панель навігації</string>

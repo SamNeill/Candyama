@@ -79,6 +79,7 @@
     <!--Jakaa-->
     <string name="share_app_title">Hei! Katso %s</string>
     <string name="share_app_body">Tutustu %1$s Icon Packiin Play Kaupassa: %2$s</string>
+    <string name="share_app_body_amazon">Tutustu %1$s Icon Packiin Amazon App Storesta: %2$s</string>
 
     <!--Napauta Intro-->
     <string name="tap_intro_home_navigation">Navigointilaatikko</string>

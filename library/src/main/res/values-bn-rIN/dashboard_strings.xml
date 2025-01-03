@@ -79,6 +79,7 @@
     <!--শেয়ার করুন-->
     <string name="share_app_title">ইয়ো! %s দেখুন</string>
     <string name="share_app_body">প্লে স্টোরে %1$s আইকন প্যাক দেখুন: %2$s</string>
+    <string name="share_app_body_amazon">প্লে স্টোরে %1$s আইকন প্যাক দেখুন: %2$s</string>
 
     <!--ভূমিকা আলতো চাপুন-->
     <string name="tap_intro_home_navigation">নেভিগেশন ড্রয়ার</string>

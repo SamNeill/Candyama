@@ -79,6 +79,7 @@
     <!--Membagikan-->
     <string name="share_app_title">Hai! Periksa %s</string>
     <string name="share_app_body">Lihat Paket Ikon %1$s di Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Lihat Paket Ikon %1$s di Amazon App Store: %2$s</string>
 
     <!--Ketuk Intro-->
     <string name="tap_intro_home_navigation">Laci navigasi</string>

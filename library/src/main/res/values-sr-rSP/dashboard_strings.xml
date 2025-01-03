@@ -79,6 +79,7 @@
     <!--Схаре-->
     <string name="share_app_title">Ио! Погледајте %с</string>
     <string name="share_app_body">Погледајте пакет икона %1$с у Плаи продавници: %2$с</string>
+    <string name="share_app_body_amazon">Погледајте пакет икона %1$с у Амазон АппСторе-у: %2$с</string>
 
     <!--Додирните Интро-->
     <string name="tap_intro_home_navigation">Фиока за навигацију</string>

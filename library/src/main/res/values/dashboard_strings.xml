@@ -78,6 +78,7 @@
     <!-- Share -->
     <string name="share_app_title">Yo! Check out %s</string>
     <string name="share_app_body">Check out %1$s Icon Pack on Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Check out %1$s Icon Pack on Amazon App Store: %2$s</string>
 
     <!-- Tap Intro -->
     <string name="tap_intro_home_navigation">Navigation drawer</string>

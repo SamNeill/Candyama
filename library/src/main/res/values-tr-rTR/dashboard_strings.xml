@@ -79,6 +79,7 @@
     <!--Paylaşmak-->
     <string name="share_app_title">Hey! %s\'e göz atın</string>
     <string name="share_app_body">Play Store\'daki %1$s Simge Paketine göz atın: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store\'daki %1$s Simge Paketine göz atın: %2$s</string>
 
     <!--Giriş\'e dokunun-->
     <string name="tap_intro_home_navigation">Gezinme çekmecesi</string>

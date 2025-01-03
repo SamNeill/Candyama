@@ -79,6 +79,7 @@
     <!--Споделете-->
     <string name="share_app_title">йо! Вижте %s</string>
     <string name="share_app_body">Вижте %1$s Icon Pack в Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Вижте %1$s Icon Pack в Amazon App Store: %2$s</string>
 
     <!--Докоснете Intro-->
     <string name="tap_intro_home_navigation">Чекмедже за навигация</string>

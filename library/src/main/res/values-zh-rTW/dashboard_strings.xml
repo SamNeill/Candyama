@@ -79,6 +79,7 @@
     <!--分享-->
     <string name="share_app_title">喲！查看 %s</string>
     <string name="share_app_body">在 Play 商店中查看 %1$s 圖示包：%2$s</string>
+    <string name="share_app_body_amazon">在亞馬遜應用程s式商店中查看 %1$s 圖示包：%2$s</string>
 
     <!--點擊介紹-->
     <string name="tap_intro_home_navigation">抽屜式導航</string>

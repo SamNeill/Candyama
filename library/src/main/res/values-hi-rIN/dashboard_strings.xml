@@ -79,6 +79,7 @@
     <!--शेयर करना-->
     <string name="share_app_title">यो! %s देखें</string>
     <string name="share_app_body">प्ले स्टोर पर %1$s आइकन पैक देखें: %2$s</string>
+    <string name="share_app_body_amazon">प्ले स्टोर पर %1$s आइकन पैक देखें: %2$s</string>
 
     <!--परिचय टैप करें-->
     <string name="tap_intro_home_navigation">नेविगेशन दराज</string>

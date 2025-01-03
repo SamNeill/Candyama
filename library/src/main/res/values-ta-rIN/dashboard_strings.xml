@@ -79,6 +79,7 @@
     <!--பகிரவும்-->
     <string name="share_app_title">யோ! %sஐப் பார்க்கவும்</string>
     <string name="share_app_body">Play Store இல் %1$s ஐகான் பேக்கைப் பார்க்கவும்: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store இல் %1$s ஐகான் பேக்கைப் பார்க்கவும்: %2$s</string>
 
     <!--அறிமுகத்தைத் தட்டவும்-->
     <string name="tap_intro_home_navigation">வழிசெலுத்தல் டிராயர்</string>

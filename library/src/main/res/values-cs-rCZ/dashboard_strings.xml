@@ -79,6 +79,7 @@
     <!--Podíl-->
     <string name="share_app_title">Jo! Podívejte se na %s</string>
     <string name="share_app_body">Podívejte se na sadu ikon %1$s v Obchodě Play: %2$s</string>
+    <string name="share_app_body_amazon">Podívejte se na sadu ikon %1$s v Amazon App Store: %2$s</string>
 
     <!--Klepněte na Úvod-->
     <string name="tap_intro_home_navigation">Navigační zásuvka</string>

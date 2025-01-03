@@ -79,6 +79,7 @@
     <!--सेयर गर्नुहोस्-->
     <string name="share_app_title">यो! %s जाँच गर्नुहोस्</string>
     <string name="share_app_body">Play Store मा %1$s आइकन प्याक हेर्नुहोस्: %2$s</string>
+    <string name="share_app_body_amazon">Amazon App Store मा %1$s आइकन प्याक हेर्नुहोस्: %2$s</string>
 
     <!--परिचय ट्याप गर्नुहोस्-->
     <string name="tap_intro_home_navigation">नेभिगेसन दराज</string>

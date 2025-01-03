@@ -79,6 +79,7 @@
     <!--Μερίδιο-->
     <string name="share_app_title">Γιο! Ρίξτε μια ματιά στο %s</string>
     <string name="share_app_body">Ρίξτε μια ματιά στο %1$s Icon Pack στο Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Ρίξτε μια ματιά στο %1$s Icon Pack στο Amazon App Store: %2$s</string>
 
     <!--Πατήστε Εισαγωγή-->
     <string name="tap_intro_home_navigation">Συρτάρι πλοήγησης</string>

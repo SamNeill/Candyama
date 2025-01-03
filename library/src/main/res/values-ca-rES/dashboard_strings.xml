@@ -78,6 +78,7 @@
     <!--Comparteix-->
     <string name="share_app_title">Jo! Fes una ullada a %s</string>
     <string name="share_app_body">Fes una ullada al paquet d\'icones %1$s a Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Fes una ullada al paquet d\'icones %1$s a Amazon App Store: %2$s</string>
 
     <!--Toqueu Introducció-->
     <string name="tap_intro_home_navigation">Calaix de navegació</string>

@@ -79,6 +79,7 @@
     <!--Részesedés-->
     <string name="share_app_title">Jaj! Nézze meg: %s</string>
     <string name="share_app_body">Tekintse meg a %1$s ikoncsomagot a Play Áruházban: %2$s</string>
+    <string name="share_app_body_amazon">Tekintse meg a %1$s Icon Pack a Amazon App Store-ban: %2$s</string>
 
     <!--Koppintson az Intro elemre-->
     <string name="tap_intro_home_navigation">Navigációs fiók</string>

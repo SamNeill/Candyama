@@ -79,6 +79,7 @@
     <!--Ibahagi-->
     <string name="share_app_title">Yo! Tingnan ang %s</string>
     <string name="share_app_body">Tingnan ang %1$s Icon Pack sa Play Store: %2$s</string>
+    <string name="share_app_body_amazon">Tingnan ang %1$s Icon Pack sa Amazon App Store: %2$s</string>
 
     <!--I-tap ang Intro-->
     <string name="tap_intro_home_navigation">Navigation drawer</string>
