@@ -1,7 +1,7 @@
-# CandyBar
+# Candyama
 
-[![](https://jitpack.io/v/SamNeill/Candybar.svg)](https://jitpack.io/#SamNeill/Candybar)
-[![Android CI](https://github.com/SamNeill/Candybar/actions/workflows/android.yml/badge.svg)](https://github.com/SamNeill/Candybar/actions/workflows/android.yml)
+[![](https://jitpack.io/v/SamNeill/Candyama.svg)](https://jitpack.io/#SamNeill/Candyama)
+[![Android CI](https://github.com/SamNeill/Candyama/actions/workflows/android.yml/badge.svg)](https://github.com/SamNeill/Candyama/actions/workflows/android.yml)
 
 A modern and feature-rich icon pack dashboard based on [CandyBar Library](https://github.com/zixpo/candybar-sample), with enhanced Material You support and modern Android features.
 
@@ -26,7 +26,7 @@ allprojects {
 Add the dependency:
 ```gradle
 dependencies {
-    implementation 'com.github.SamNeill:Candybar:Latest'
+    implementation 'com.github.SamNeill:Candyama:Latest'
 }
 ```
 
