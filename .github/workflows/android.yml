@@ -46,30 +46,8 @@ jobs:
       - name: Build Debug APK
         run: ./gradlew :app:assembleDebug --stacktrace
         
-      - name: Build Release APK
-        if: startsWith(github.ref, 'refs/tags/')
-        run: ./gradlew :app:assembleRelease --stacktrace
-        
       - name: Upload Debug APK
         uses: actions/upload-artifact@v3
         with:
           name: app-debug
           path: app/build/outputs/apk/debug/*.apk
-          
-      - name: Upload Release APK
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: actions/upload-artifact@v3
-        with:
-          name: app-release
-          path: app/build/outputs/apk/release/*.apk
-          
-      - name: Create Release
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v1
-        with:
-          files: |
-            app/build/outputs/apk/release/*.apk
-            app/build/outputs/apk/debug/*.apk
-          draft: false
-          prerelease: false
-          generate_release_notes: true
