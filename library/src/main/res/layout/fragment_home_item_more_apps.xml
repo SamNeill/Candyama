@@ -41,7 +41,7 @@
             android:gravity="center"
             android:textColor="?attr/cb_secondaryText"
             android:textSize="@dimen/text_content"
-            android:text="@string/home_more_apps"
+            android:text="@string/home_more_apps_amazon"
             app:fontFamily="@font/regular" />
 
     </LinearLayout>

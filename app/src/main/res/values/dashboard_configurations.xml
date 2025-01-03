@@ -53,7 +53,7 @@
     <bool name="reset_icon_request_limit">true</bool>
     <bool name="json_check_before_request">false</bool>
     <bool name="enable_ps_signature">false</bool>
-    <bool name="enable_premium_request">true</bool>
+    <bool name="enable_premium_request">false</bool>
     <bool name="enable_restore_purchases">false</bool>
     <bool name="enable_non_mail_app_request">false</bool>
     <bool name="hide_missing_app_count">false</bool>
@@ -108,7 +108,7 @@
     <string name="terms_and_conditions_link">https://app-privacy-policy-generator.firebaseapp.com/</string>
 
     <!-- CONFIG: DONATE -->
-    <bool name="enable_donation">true</bool>
+    <bool name="enable_donation">false</bool>
 
     <!-- CONFIG: MISC -->
     <string name="config_json">https://raw.githubusercontent.com/yourusername/CandyBar/main/update_config.json</string>

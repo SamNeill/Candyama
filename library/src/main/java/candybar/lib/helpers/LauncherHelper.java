@@ -902,10 +902,10 @@ public class LauncherHelper {
                     .content(String.format(context.getResources().getString(
                             R.string.apply_manual), launcherName, context.getResources().getString(R.string.app_name)))
                     .positiveText(android.R.string.ok)
-                    .negativeText(android.R.string.cancel)
                     .backgroundColor(ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground))
                     .positiveColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
-                    .negativeColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
+                    .titleColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
+                    .contentColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
                     .onPositive((dialog, which) -> {
                         CandyBarApplication.getConfiguration().getAnalyticsHandler().logEvent(
                                 "click",
@@ -954,10 +954,8 @@ public class LauncherHelper {
                 .title(launcherName)
                 .content(description + "\n\n\t• " + String.join("\n\t• ", steps))
                 .positiveText(android.R.string.yes)
-                .negativeText(android.R.string.cancel)
                 .backgroundColor(ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground))
                 .positiveColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
-                .negativeColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
                 .titleColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
                 .contentColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
                 .onPositive((dialog, which) -> {
@@ -1027,65 +1025,11 @@ public class LauncherHelper {
                                 + "\n\n"
                                 + (Build.VERSION.SDK_INT > Build.VERSION_CODES.R ? compatibleText : incompatibleText)
                 )
-                .positiveText(android.R.string.yes)
-                .negativeText(android.R.string.cancel)
+                .positiveText(android.R.string.ok)
                 .backgroundColor(ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground))
                 .positiveColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
-                .negativeColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
                 .titleColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
                 .contentColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
-                .onPositive((dialog, which) -> {
-                    CandyBarApplication.getConfiguration().getAnalyticsHandler().logEvent(
-                            "click",
-                            new HashMap<String, Object>() {{
-                                put("section", "apply");
-                                put("action", "manual_open_confirm");
-                                put("launcher", launcherName);
-                            }}
-                    );
-                    if (Build.VERSION.SDK_INT > Build.VERSION_CODES.R) {
-                        String packageName = "com.samsung.android.themedesigner";
-                        try {
-                            String uri = "samsungapps://ProductDetail/" + packageName;
-                            Intent store = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                            context.startActivity(store);
-                        } catch (ActivityNotFoundException e) {
-                            // The device can't handle Samsung Deep Links
-                            // Let us point to the app in a browser instead
-                            try {
-                                Uri uri = Uri.parse("https://galaxystore.samsung.com/detail/" + packageName);
-                                Intent store = new Intent(Intent.ACTION_VIEW, uri);
-                                context.startActivity(store);
-                            } catch (ActivityNotFoundException ignored) {
-                                Toast.makeText(context, context.getResources().getString(
-                                        R.string.no_browser), Toast.LENGTH_LONG).show();
-                            }
-                        }
-                    } else {
-                        try {
-                            // Open software update activity if we can.
-                            // Verified to be working on:
-                            //   Samsung Galaxy S10 DUOS running Android 10
-                            //   Samsung Galaxy S23 Ultra running Android 13
-                            Intent intent = new Intent("android.settings.SYSTEM_UPDATE_SETTINGS");
-                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            context.startActivity(intent);
-                        } catch (ActivityNotFoundException ignored) {
-                        }
-                    }
-                })
-                .negativeText(android.R.string.cancel)
-                .onNegative(((dialog, which) -> {
-                    CandyBarApplication.getConfiguration().getAnalyticsHandler().logEvent(
-                            "click",
-                            new HashMap<String, Object>() {{
-                                put("section", "apply");
-                                put("action", "manual_open_cancel");
-                                put("launcher", launcherName);
-                            }}
-                    );
-                }))
-                .backgroundColor(ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground))
                 .show();
     }
 
@@ -1118,29 +1062,10 @@ public class LauncherHelper {
                 .title(launcherName)
                 .content(message)
                 .positiveText(android.R.string.ok)
-                .negativeText(android.R.string.cancel)
                 .backgroundColor(ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground))
                 .positiveColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
-                .negativeColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
                 .titleColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
                 .contentColor(ColorHelper.getAttributeColor(context, R.attr.cb_primaryText))
-                .onPositive((dialog, which) -> {
-                    CandyBarApplication.getConfiguration().getAnalyticsHandler().logEvent(
-                            "click",
-                            new HashMap<String, Object>() {{
-                                put("section", "apply");
-                                put("action", "incompatible_third_party_open");
-                                put("launcher", launcherName);
-                            }}
-                    );
-                    try {
-                        Intent store = new Intent(Intent.ACTION_VIEW, Uri.parse(thirdPartyHelperURL));
-                        context.startActivity(store);
-                    } catch (ActivityNotFoundException e) {
-                        Toast.makeText(context, context.getResources().getString(
-                                R.string.no_browser), Toast.LENGTH_LONG).show();
-                    }
-                })
                 .show();
     }
 
@@ -1160,22 +1085,10 @@ public class LauncherHelper {
                 .typeface(TypefaceHelper.getMedium(context), TypefaceHelper.getRegular(context))
                 .title(launcherName)
                 .content(String.format(context.getResources().getString(
-                        R.string.apply_launcher_not_installed), launcherName))
-                .positiveText(R.string.install)
-                .negativeText(android.R.string.cancel)
+                        R.string.apply_launcher_not_installed_message), launcherName))
+                .positiveText(android.R.string.ok)
                 .backgroundColor(ColorHelper.getAttributeColor(context, R.attr.cb_cardBackground))
                 .positiveColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
-                .negativeColor(ColorHelper.getAttributeColor(context, R.attr.cb_colorAccent))
-                .onPositive((dialog, which) -> {
-                    try {
-                        Intent store = new Intent(Intent.ACTION_VIEW, Uri.parse(
-                                "https://play.google.com/store/apps/details?id=" + packageName));
-                        context.startActivity(store);
-                    } catch (ActivityNotFoundException e) {
-                        Toast.makeText(context, context.getResources().getString(
-                                R.string.no_browser), Toast.LENGTH_LONG).show();
-                    }
-                })
                 .show();
     }
 
