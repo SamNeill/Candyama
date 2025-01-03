@@ -129,13 +129,13 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.SamNeill'
-                artifactId = 'Candyama'
+                artifactId = 'Candybar'
                 version = rootProject.ext.VersionName
 
                 pom {
-                    name = 'Candyama'
+                    name = 'Candybar'
                     description = 'Android Icon Pack Dashboard Library'
-                    url = 'https://github.com/SamNeill/Candyama'
+                    url = 'https://github.com/SamNeill/Candybar'
                     licenses {
                         license {
                             name = 'The Apache License, Version 2.0'
