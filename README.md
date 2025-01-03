@@ -85,6 +85,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
-## Sample Branch
-This is a demonstration of working with branches in the repository.
