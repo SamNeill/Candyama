@@ -185,4 +185,3 @@ app/src/main/res/xml-v31/
 # Local library modules and dependencies - never pull these
 library/**
 extLibs/**
-app/build.gradle
