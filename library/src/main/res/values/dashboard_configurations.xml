@@ -83,12 +83,12 @@
     <!-- Link to your app's Rate and Review page.
         Leave this empty to disable the "Rate and Review" button.
         You can use special keyword `{{packageName}}`, `{{packageName}}` will be replaced with your app's package name -->
-    <string name="rate_and_review_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
+    <string name="rate_and_review_link">https://www.amazon.com/dp/ASIN</string>
 
     <!-- Link to your app's main page. It will be used when your user shares your app using "Share" button.
         Leave this empty to disable the "Share" button.
         You can use special keyword `{{packageName}}`, `{{packageName}}` will be replaced with your app's package name -->
-    <string name="share_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
+    <string name="share_link">https://www.amazon.com/dp/ASIN</string>
 
     <!-- Enable "Check for update" button.
         It needs the option "config_json" to be configured in order to work -->
@@ -97,25 +97,12 @@
     <!-- More apps at Google Play Store
         Link to Google Play Store developer page.
         If you don't want to show this, just leave this empty -->
-    <string name="google_play_dev">https://play.google.com/store/apps/dev?id=your_developer_id</string>
+    <string name="google_play_dev">https://www.amazon.com/</string>
 
     <!-- Enables the new flat and outline styled cards everywhere -->
     <bool name="use_flat_card">false</bool>
 
 
-    <!--
-        CONFIG: NAVIGATION VIEW HEADER
-    -->
-    <!-- Navigation view header image
-        If you want to use an image from url, just put the url here
-        If you want to use an image stored in the project ("drawable" folder)
-        just put the image's name here without the extension
-        (ex: navigation_view_header.png -> navigation_view_header)
-
-        If you want to use a solid color, you can put the hex color code here
-        ex: <string name="navigation_view_header">#000000</string>
-        -->
-    <string name="navigation_view_header">https://drive.google.com/uc?id=0B0f4ypHfNKm5VXlwejdaZ3ZRYVE</string>
 
     <!-- Navigation view header text
         Leave empty if you don't want to show any text -->

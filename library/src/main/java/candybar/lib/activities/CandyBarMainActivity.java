@@ -1004,7 +1004,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             return;
         }
 
-        String imageUrl = getResources().getString(R.string.navigation_view_header);
+
         String titleText = getResources().getString(R.string.navigation_view_header_title);
         View header = mNavigationView.getHeaderView(0);
         HeaderView image = header.findViewById(R.id.header_image);
@@ -1028,26 +1028,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             }
         }
 
-        if (ColorHelper.isValidColor(imageUrl)) {
-            image.setBackgroundColor(Color.parseColor(imageUrl));
-            return;
-        }
 
-        if (!URLUtil.isValidUrl(imageUrl)) {
-            imageUrl = "drawable://" + getDrawableId(imageUrl);
-        }
-
-        final Context context = this;
-        if (CandyBarGlideModule.isValidContextForGlide(context)) {
-            Glide.with(context)
-                    .load(imageUrl)
-                    .override(720)
-                    .optionalCenterInside()
-                    .diskCacheStrategy(imageUrl.contains("drawable://")
-                            ? DiskCacheStrategy.NONE
-                            : DiskCacheStrategy.RESOURCE)
-                    .into(image);
-        }
     }
 
     private void checkWallpapers() {

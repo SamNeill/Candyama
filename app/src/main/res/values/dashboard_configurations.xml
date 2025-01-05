@@ -29,10 +29,10 @@
         Get it from <a href="https://github.com/SamNeill">GitHub</a>.
         ]]>
     </string>
-    <string name="rate_and_review_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
-    <string name="share_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
+    <string name="rate_and_review_link">https://www.amazon.com</string>
+    <string name="share_link">https://www.amazon.com</string>
     <bool name="enable_check_update">true</bool>
-    <string name="google_play_dev">https://play.google.com/store/apps/dev?id=your_developer_id</string>
+    <string name="google_play_dev">https://www.amazon.com</string>
     <bool name="use_flat_card">true</bool>
 
     <!-- CONFIG: NAVIGATION VIEW HEADER -->
