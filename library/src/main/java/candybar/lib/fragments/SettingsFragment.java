@@ -181,11 +181,13 @@ public class SettingsFragment extends Fragment {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 settings.add(new Setting(-1, "", resources.getString(R.string.theme_name_material_you), "", "", Setting.Type.MATERIAL_YOU));
-                
-                settings.add(new Setting(-1, "", 
-                    resources.getString(R.string.pref_navigation_style),
-                    "", 
-                    "", Setting.Type.NAVIGATION_VIEW_STYLE));
+            }
+
+            if (resources.getBoolean(R.bool.enable_navigation_toggle)) {
+                settings.add(new Setting(-1, "",
+                        resources.getString(R.string.pref_navigation_style),
+                        "",
+                        "", Setting.Type.NAVIGATION_VIEW_STYLE));
             }
         }
 
@@ -210,9 +212,9 @@ public class SettingsFragment extends Fragment {
                 resources.getString(R.string.pref_others_header),
                 "", "", "", Setting.Type.HEADER));
 
-        boolean isBottomNav = CandyBarApplication.getConfiguration().getNavigationViewStyle() 
-            == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
-        
+        boolean isBottomNav = CandyBarApplication.getConfiguration().getNavigationViewStyle()
+                == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
+
         if (!isBottomNav) {
             settings.add(new Setting(-1, "",
                     resources.getString(R.string.pref_others_changelog),

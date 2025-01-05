@@ -107,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Додирните овде да преузмете и сачувате позадину на свом уређају како бисте је могли користити касније</string>
     <string name="tap_intro_wallpaper_preview_apply">Нанесите позадину</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Додирните овде да поставите позадину као позадину почетног екрана</string>
+    <string name="tap_intro_navigation_view">Стил навигације</string>
+    <string name="tap_intro_navigation_view_desc">Додирните овде да бисте пребацили између панела навигације и доње навигационе траке у зависности од вашег избора</string>
 
     <!--Хоме-->
     <string name="home_more_apps_header">Више апликација</string>

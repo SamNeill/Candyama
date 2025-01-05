@@ -107,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Daha sonra kullanabilmek amacıyla duvar kağıdını cihazınıza indirip kaydetmek için buraya dokunun</string>
     <string name="tap_intro_wallpaper_preview_apply">Duvar kağıdını uygula</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Duvar kağıdını ana ekranın arka planı olarak ayarlamak için buraya dokunun</string>
+    <string name="tap_intro_navigation_view">Navigasyon Stili</string>
+    <string name="tap_intro_navigation_view_desc">Navigasyon çubuğunu veya navigasyon çubuğunu aşağıda seçtiğiniz gibi değiştirin</string>
 
     <!--Ev-->
     <string name="home_more_apps_header">Daha Fazla Uygulama</string>

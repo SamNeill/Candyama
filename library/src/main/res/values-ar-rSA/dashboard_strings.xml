@@ -107,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">انقر هنا لتنزيل الخلفية وحفظها على جهازك حتى تتمكن من استخدامها لاحقًا</string>
     <string name="tap_intro_wallpaper_preview_apply">تطبيق ورق الجدران</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">انقر هنا لتعيين خلفية الشاشة كخلفية للشاشة الرئيسية</string>
+    <string name="tap_intro_navigation_view">نمط التنقل</string>
+    <string name="tap_intro_navigation_view_desc">تبديل بين الشريط الجانبي للتنقل والشريط التنقل السفلي حسب الرغبة</string>
 
     <!--بيت-->
     <string name="home_more_apps_header">المزيد من التطبيقات</string>

@@ -107,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Trykk her for å laste ned og lagre bakgrunnsbilde på enheten din slik at du kan bruke den senere</string>
     <string name="tap_intro_wallpaper_preview_apply">Påfør tapet</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Trykk her for å angi bakgrunn som hjemmeskjermbakgrunn</string>
+    <string name="tap_intro_navigation_view">Navigasjonsstil</string>
+    <string name="tap_intro_navigation_view_desc">Switch mellom navigasjonsskuff og nedre navigasjonsbånd som din likhet</string>
 
     <!--Hjem-->
     <string name="home_more_apps_header">Flere apper</string>

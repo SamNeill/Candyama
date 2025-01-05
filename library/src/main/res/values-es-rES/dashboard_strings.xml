@@ -107,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Toque aquí para descargar y guardar el fondo de pantalla en su dispositivo para poder usarlo más tarde</string>
     <string name="tap_intro_wallpaper_preview_apply">Aplicar fondo de pantalla</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Toque aquí para configurar el fondo de pantalla como fondo de pantalla de inicio</string>
+    <string name="tap_intro_navigation_view">Estilo de navegación</string>
+    <string name="tap_intro_navigation_view_desc">Cambie entre el panel de navegación y la barra de navegación inferior según su preferencia</string>
 
     <!--Hogar-->
     <string name="home_more_apps_header">Más aplicaciones</string>

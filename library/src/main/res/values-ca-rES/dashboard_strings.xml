@@ -106,6 +106,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Toqueu aquí per baixar i desar fons de pantalla al vostre dispositiu perquè el pugueu utilitzar més tard</string>
     <string name="tap_intro_wallpaper_preview_apply">Aplica fons de pantalla</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Toqueu aquí per configurar el fons de pantalla com a fons de la pantalla d\'inici</string>
+    <string name="tap_intro_navigation_view">Estil de navegació</string>
+    <string name="tap_intro_navigation_view_desc">Canvia entre el llistó de navegació i la barra de navegació inferior segons el teu gust</string>
 
     <!--a casa-->
     <string name="home_more_apps_header">Més aplicacions</string>

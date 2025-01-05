@@ -107,6 +107,8 @@
     <string name="tap_intro_wallpaper_preview_save_desc">Tik hier om de achtergrond te downloaden en op uw apparaat op te slaan, zodat u deze later kunt gebruiken</string>
     <string name="tap_intro_wallpaper_preview_apply">Behang aanbrengen</string>
     <string name="tap_intro_wallpaper_preview_apply_desc">Tik hier om de achtergrond in te stellen als achtergrond voor het startscherm</string>
+    <string name="tap_intro_navigation_view">Navigatiestijl</string>
+    <string name="tap_intro_navigation_view_desc">Switch tussen de navigatielade en de onderste navigatiebalk, afhankelijk van uw voorkeur</string>
 
     <!--Thuis-->
     <string name="home_more_apps_header">Meer apps</string>
