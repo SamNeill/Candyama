@@ -208,7 +208,7 @@ public class HomeFragment extends Fragment implements HomeListener {
                 CandyBarApplication.getConfiguration().hasKustomFolders()) {
             Log.d("CandyBar", "Adding Kustom section to home");
             homes.add(new Home(
-                    R.drawable.ic_drawer_presets,
+                    R.drawable.ic_toolbar_presets,
                     resources.getString(R.string.navigation_view_kustom),
                     resources.getString(R.string.home_kustom_desc, resources.getString(R.string.app_name)),
                     Home.Type.KUSTOM,
