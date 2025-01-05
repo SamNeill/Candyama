@@ -67,7 +67,7 @@
 
     <!-- CONFIG: CLOUD WALLPAPERS -->
     <bool name="enable_wallpapers">true</bool>
-    <string name="wallpaper_json">https://raw.githubusercontent.com/yourusername/CandyBar/main/update_config.json</string>
+    <string name="wallpaper_json">https://raw.githubusercontent.com/SamNeill/Walls/refs/heads/master/json.json</string>
     <!--<string name="wallpaper_json">assets://wallpapers_offline.json</string>-->
     <bool name="enable_wallpaper_download">true</bool>
     <bool name="wallpaper_show_name_author">true</bool>
