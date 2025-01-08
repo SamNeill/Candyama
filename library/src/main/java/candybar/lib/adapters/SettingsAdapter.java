@@ -142,14 +142,14 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 }
 
                 if (setting.getIcon() != -1) {
-                    int color = ColorHelper.getAttributeColor(mContext, android.R.attr.textColorPrimary);
+                    int color = ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent);
                     contentViewHolder.title.setCompoundDrawablesWithIntrinsicBounds(
                             DrawableHelper.getTintedDrawable(mContext, setting.getIcon(), color), null, null, null);
                 }
             }
 
-            if (setting.getType() == MATERIAL_YOU || setting.getType() == NOTIFICATIONS ||
-                    setting.getType() == NAVIGATION_VIEW_STYLE) {
+            if (setting.getType() == MATERIAL_YOU || setting.getType() == NOTIFICATIONS || 
+                setting.getType() == NAVIGATION_VIEW_STYLE) {
                 contentViewHolder.materialSwitch.setVisibility(View.VISIBLE);
                 contentViewHolder.container.setClickable(false);
                 int pad = contentViewHolder.container.getPaddingLeft();
@@ -168,11 +168,11 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             }
 
             if (setting.getType() == NAVIGATION_VIEW_STYLE) {
-                boolean isBottomNav = Preferences.get(mContext).getNavigationViewStyle()
-                        == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
+                boolean isBottomNav = Preferences.get(mContext).getNavigationViewStyle() 
+                    == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
                 contentViewHolder.materialSwitch.setChecked(isBottomNav);
                 contentViewHolder.updateSwitchAppearance();
-
+                
                 // Show navigation intro if needed
                 if (Preferences.get(mContext).isTimeToShowNavigationViewIntro()) {
                     new Handler(Looper.getMainLooper()).postDelayed(() -> {
@@ -215,6 +215,10 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             container = itemView.findViewById(R.id.container);
             materialSwitch = itemView.findViewById(R.id.switch_key);
             mContext = itemView.getContext();
+            
+            // Set footer text color to accent
+            footer.setTextColor(ColorHelper.getAttributeColor(mContext, R.attr.cb_colorAccent));
+            
             updateSwitchAppearance();
 
             container.setOnClickListener(this);
@@ -246,14 +250,14 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         }
                         break;
                     case NAVIGATION_VIEW_STYLE:
-                        if (isChecked != (Preferences.get(mContext).getNavigationViewStyle()
-                                == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION)) {
-                            CandyBarApplication.NavigationViewStyle newStyle = isChecked ?
-                                    CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION :
-                                    CandyBarApplication.NavigationViewStyle.MINI_DRAWER;
-
+                        if (isChecked != (Preferences.get(mContext).getNavigationViewStyle() 
+                            == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION)) {
+                            CandyBarApplication.NavigationViewStyle newStyle = isChecked ? 
+                                CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION :
+                                CandyBarApplication.NavigationViewStyle.MINI_DRAWER;
+                            
                             Preferences.get(mContext).setNavigationViewStyle(newStyle);
-
+                            
                             Activity activity = (Activity) mContext;
                             Intent intent = activity.getIntent();
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -270,45 +274,45 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 if (isMaterialYou) {
                     materialSwitch.setLayoutParams(new LinearLayout.LayoutParams(
-                            ViewGroup.LayoutParams.WRAP_CONTENT,
-                            ViewGroup.LayoutParams.WRAP_CONTENT));
+                        ViewGroup.LayoutParams.WRAP_CONTENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT));
                     materialSwitch.setMinHeight((int) mContext.getResources().getDimension(R.dimen.switch_height));
                     materialSwitch.setMinWidth((int) mContext.getResources().getDimension(R.dimen.switch_width));
                     materialSwitch.setThumbTintList(ColorStateList.valueOf(
-                            ContextCompat.getColor(mContext, R.color.material_you_switch_thumb)));
+                        ContextCompat.getColor(mContext, R.color.material_you_switch_thumb)));
                     materialSwitch.setTrackTintList(ColorStateList.valueOf(
-                            ContextCompat.getColor(mContext, R.color.material_you_switch_track)));
+                        ContextCompat.getColor(mContext, R.color.material_you_switch_track)));
                 } else {
                     materialSwitch.setLayoutParams(new LinearLayout.LayoutParams(
-                            ViewGroup.LayoutParams.WRAP_CONTENT,
-                            ViewGroup.LayoutParams.WRAP_CONTENT));
+                        ViewGroup.LayoutParams.WRAP_CONTENT,
+                        ViewGroup.LayoutParams.WRAP_CONTENT));
                     materialSwitch.setMinHeight((int) mContext.getResources().getDimension(R.dimen.switch_height_m2));
                     materialSwitch.setMinWidth((int) mContext.getResources().getDimension(R.dimen.switch_width_m2));
                     int[][] states = new int[][] {
-                            new int[] { android.R.attr.state_checked },
-                            new int[] { -android.R.attr.state_checked }
+                        new int[] { android.R.attr.state_checked },
+                        new int[] { -android.R.attr.state_checked }
                     };
-
+                    
                     TypedValue typedValue = new TypedValue();
                     mContext.getTheme().resolveAttribute(R.attr.cb_colorAccent, typedValue, true);
                     int accentColor = typedValue.data;
-
+                    
                     // Get main background color from theme for track
                     TypedValue cardValue = new TypedValue();
                     mContext.getTheme().resolveAttribute(R.attr.cb_mainBackground, cardValue, true);
                     int trackColor = cardValue.data;
                     trackColor = ColorHelper.setColorAlpha(trackColor, 0.8f); // 60% opacity
-
+                    
                     int[] thumbColors = new int[] {
-                            accentColor,
-                            accentColor
+                        accentColor,
+                        accentColor
                     };
-
+                    
                     int[] trackColors = new int[] {
-                            trackColor,
-                            trackColor
+                        trackColor,
+                        trackColor
                     };
-
+                    
                     materialSwitch.setThumbTintList(new ColorStateList(states, thumbColors));
                     materialSwitch.setTrackTintList(new ColorStateList(states, trackColors));
                 }
@@ -320,8 +324,8 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             subtitle.setText(setting.getSubtitle());
             content.setText(setting.getContent());
 
-            if (setting.getType() == MATERIAL_YOU || setting.getType() == NOTIFICATIONS ||
-                    setting.getType() == NAVIGATION_VIEW_STYLE) {
+            if (setting.getType() == MATERIAL_YOU || setting.getType() == NOTIFICATIONS || 
+                setting.getType() == NAVIGATION_VIEW_STYLE) {
                 materialSwitch.setVisibility(View.VISIBLE);
                 container.setClickable(false);
                 int pad = container.getPaddingLeft();
@@ -361,14 +365,14 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         }
                         break;
                     case NAVIGATION_VIEW_STYLE:
-                        if (isChecked != (Preferences.get(mContext).getNavigationViewStyle()
-                                == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION)) {
-                            CandyBarApplication.NavigationViewStyle newStyle = isChecked ?
-                                    CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION :
-                                    CandyBarApplication.NavigationViewStyle.MINI_DRAWER;
-
+                        if (isChecked != (Preferences.get(mContext).getNavigationViewStyle() 
+                            == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION)) {
+                            CandyBarApplication.NavigationViewStyle newStyle = isChecked ? 
+                                CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION :
+                                CandyBarApplication.NavigationViewStyle.MINI_DRAWER;
+                            
                             Preferences.get(mContext).setNavigationViewStyle(newStyle);
-
+                            
                             Activity activity = (Activity) mContext;
                             Intent intent = activity.getIntent();
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -587,7 +591,7 @@ public class SettingsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                         Preferences.get(mContext).setTimeToShowWallpapersIntro(true);
                         Preferences.get(mContext).setTimeToShowWallpaperPreviewIntro(true);
                         Preferences.get(mContext).setTimeToShowNavigationViewIntro(true);
-
+                        
                         // Set intro reset last to trigger the home fragment to show intro
                         Preferences.get(mContext).setIntroReset(true);
 
