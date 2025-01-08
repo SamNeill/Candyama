@@ -4,6 +4,7 @@ import static candybar.lib.helpers.DrawableHelper.getDrawableId;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
@@ -526,7 +527,6 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                 mPosition = 0;
                 mFragmentTag = Extras.Tag.HOME;
                 setFragment(getFragment(mPosition));
-                return;
             }
         } else {
             // Handle back press for sidebar navigation
@@ -862,7 +862,7 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
             int color = ColorHelper.getAttributeColor(this, R.attr.cb_toolbarIcon);
             toolbar.setNavigationIcon(DrawableHelper.getTintedDrawable(
                     this, R.drawable.ic_toolbar_back, color));
-            
+
             // Only handle bottom navigation visibility when using bottom navigation mode
             if (isBottomNavigation && mBottomNavigationView != null) {
                 mBottomNavigationView.setVisibility(View.GONE);
@@ -1012,6 +1012,15 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         TextView title = header.findViewById(R.id.header_title);
         TextView version = header.findViewById(R.id.header_version);
 
+        // Load the header image
+        String imageResource = getResources().getString(R.string.navigation_view_header);
+        if (imageResource.length() > 0) {
+            int resId = getResources().getIdentifier(imageResource, "drawable", getPackageName());
+            if (resId != 0) {
+                image.setImageResource(resId);
+            }
+        }
+
         if (CandyBarApplication.getConfiguration().getNavigationViewHeader() == CandyBarApplication.NavigationViewHeader.MINI) {
             image.setRatio(16, 9);
         }
@@ -1021,8 +1030,8 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         } else {
             title.setText(titleText);
             try {
-                String versionText = "v" + getPackageManager()
-                        .getPackageInfo(getPackageName(), 0).versionName;
+                PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
+                String versionText = packageInfo.versionName + "(" + packageInfo.versionCode + ")";
                 version.setText(versionText);
             } catch (Exception ignored) {
             }
@@ -1558,8 +1567,8 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
         Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.container);
 
         if (id == R.id.navigation_view_faqs ||
-            id == R.id.navigation_view_settings ||
-            id == R.id.navigation_view_about) {
+                id == R.id.navigation_view_settings ||
+                id == R.id.navigation_view_about) {
             // Store previous position before navigating to overflow menu item
             // Note: Removed Kustom from here as it's a main section
             mPreviousPosition = mPosition;
@@ -1585,10 +1594,10 @@ public abstract class CandyBarMainActivity extends AppCompatActivity implements
                 if (searchItem != null && searchItem.isActionViewExpanded()) {
                     // Force close keyboard first
                     SoftKeyboardHelper.closeKeyboard(this);
-                    
+
                     // Collapse search view
                     searchItem.collapseActionView();
-                    
+
                     // Restore bottom navigation if using bottom navigation mode
                     if (isBottomNavigation && mBottomNavigationView != null) {
                         mBottomNavigationView.setVisibility(View.VISIBLE);
