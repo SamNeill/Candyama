@@ -47,6 +47,7 @@ import candybar.lib.preferences.Preferences;
 import candybar.lib.utils.AsyncTaskBase;
 import candybar.lib.utils.listeners.RequestListener;
 import candybar.lib.helpers.ToastHelper;
+import candybar.lib.helpers.ColorHelper;
 
 /*
  * CandyBar - Material Dashboard
@@ -92,6 +93,14 @@ public class SettingsFragment extends Fragment {
                 "view",
                 new HashMap<String, Object>() {{ put("section", "settings"); }}
         );
+
+        // Set accent color for back arrow
+        if (getActivity() != null) {
+            androidx.appcompat.widget.Toolbar toolbar = getActivity().findViewById(R.id.toolbar);
+            if (toolbar != null && toolbar.getNavigationIcon() != null) {
+                toolbar.getNavigationIcon().setTint(ColorHelper.getAttributeColor(requireContext(), R.attr.cb_colorAccent));
+            }
+        }
 
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -182,12 +191,12 @@ public class SettingsFragment extends Fragment {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
                 settings.add(new Setting(-1, "", resources.getString(R.string.theme_name_material_you), "", "", Setting.Type.MATERIAL_YOU));
             }
-
+            
             if (resources.getBoolean(R.bool.enable_navigation_toggle)) {
-                settings.add(new Setting(-1, "",
-                        resources.getString(R.string.pref_navigation_style),
-                        "",
-                        "", Setting.Type.NAVIGATION_VIEW_STYLE));
+                settings.add(new Setting(-1, "", 
+                    resources.getString(R.string.pref_navigation_style),
+                    "", 
+                    "", Setting.Type.NAVIGATION_VIEW_STYLE));
             }
         }
 
@@ -212,9 +221,9 @@ public class SettingsFragment extends Fragment {
                 resources.getString(R.string.pref_others_header),
                 "", "", "", Setting.Type.HEADER));
 
-        boolean isBottomNav = CandyBarApplication.getConfiguration().getNavigationViewStyle()
-                == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
-
+        boolean isBottomNav = CandyBarApplication.getConfiguration().getNavigationViewStyle() 
+            == CandyBarApplication.NavigationViewStyle.BOTTOM_NAVIGATION;
+        
         if (!isBottomNav) {
             settings.add(new Setting(-1, "",
                     resources.getString(R.string.pref_others_changelog),
