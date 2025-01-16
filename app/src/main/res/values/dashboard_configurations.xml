@@ -29,10 +29,10 @@
         Get it from <a href="https://github.com/SamNeill">GitHub</a>.
         ]]>
     </string>
-    <string name="rate_and_review_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
-    <string name="share_link">https://play.google.com/store/apps/details?id={{packageName}}</string>
+    <string name="rate_and_review_link">https://www.amazon.com/dp/B0DB3Q3S9J</string>
+    <string name="share_link">https://www.amazon.com/dp/B0DB3Q3S9J</string>
     <bool name="enable_check_update">true</bool>
-    <string name="google_play_dev">https://play.google.com/store/apps/dev?id=your_developer_id</string>
+    <string name="google_play_dev">https://www.amazon.com/s?i=mobile-apps&amp;rh=p_4%3AObasu+Icons+pack</string>
     <bool name="use_flat_card">true</bool>
 
     <!-- CONFIG: NAVIGATION VIEW HEADER -->
@@ -54,9 +54,9 @@
     <bool name="reset_icon_request_limit">true</bool>
     <bool name="json_check_before_request">false</bool>
     <bool name="enable_ps_signature">false</bool>
-    <bool name="enable_premium_request">true</bool>
+    <bool name="enable_premium_request">false</bool>
     <bool name="enable_restore_purchases">false</bool>
-    <bool name="enable_non_mail_app_request">true</bool>
+    <bool name="enable_non_mail_app_request">false</bool>
     <bool name="hide_missing_app_count">false</bool>
     <string name="regular_request_method">email</string>
     <string name="premium_request_method"></string>
@@ -109,12 +109,10 @@
     <string name="terms_and_conditions_link">https://app-privacy-policy-generator.firebaseapp.com/</string>
 
     <!-- CONFIG: DONATE -->
-    <bool name="enable_donation">true</bool>
-
-    <!--Update Json -->
-    <string name="config_json">https://raw.githubusercontent.com/yourusername/CandyBar/main/update_config.json</string>
+    <bool name="enable_donation">false</bool>
     
     <!-- CONFIG: MISC -->
+    <string name="config_json">https://raw.githubusercontent.com/yourusername/CandyBar/main/update_config.json</string>
     <bool name="show_intro">true</bool>
     <bool name="use_legacy_intro_colors">true</bool>
 
