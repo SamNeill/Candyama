@@ -23,7 +23,7 @@ plugins {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.github.SamNeill.Candybar'
+            groupId = 'com.github.SamNeill.Candyama'
             artifactId = 'PreLollipopTransitions'
             version = rootProject.ext.VersionName
 
@@ -44,6 +44,13 @@ android {
         targetSdkVersion rootProject.ext.TargetSdk
     }
 
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
@@ -55,11 +62,6 @@ android {
             withJavadocJar()
         }
     }
-}
-
-configurations.all {
-    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
-    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
 }
 
 dependencies {
