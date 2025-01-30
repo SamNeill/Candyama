@@ -653,7 +653,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 intent.putExtra(Intent.EXTRA_SUBJECT, mContext.getResources().getString(
                         R.string.share_app_title, mContext.getResources().getString(R.string.app_name)));
                 intent.putExtra(Intent.EXTRA_TEXT,
-                        mContext.getResources().getString(R.string.share_app_body,
+                        mContext.getResources().getString(R.string.share_app_body_amazon,
                                 mContext.getResources().getString(R.string.app_name),
                                 "\n" + mContext.getResources().getString(R.string.share_link)
                                         .replaceAll("\\{\\{packageName\\}\\}", mContext.getPackageName())));
